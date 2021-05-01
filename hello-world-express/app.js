@@ -8,8 +8,8 @@ app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
-app.listen(port, hostname, () => { 
+const server = app.listen(port, hostname, () => { 
   console.log(`Express Server running at http://${hostname}:${port}/`);
 });
 
-module.exports = app;
+module.exports = server;
